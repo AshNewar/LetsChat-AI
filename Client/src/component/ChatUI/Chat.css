@@ -1,0 +1,120 @@
+.chat-container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-box{
+    position: relative;
+    width: 550px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.chat-header{
+    padding: 1rem;
+    background-color: rgb(157, 207, 253);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-button{
+    background-color: rgb(84, 158, 243);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.chat-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position:absolute;
+    width: 95%;
+    bottom: 0;
+    background-color: rgb(157, 207, 253);
+}
+
+.circle{
+    width: 35px;
+    height: 35px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid rgb(63, 61, 61);
+}
+
+.bot-bg{
+    background-image: url("/home/newar/Newar/Extracter/Client/public/robo.avif");
+}
+
+.user-bg{
+    background-image: url("/home/newar/Newar/Extracter/Client/public/download.png");
+}
+
+.input-chat{
+    width: 85%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-message{
+    display: flex;
+    flex-direction: column;
+    height: 630px;
+    overflow: scroll;
+
+}
+.chat-body{
+    height: 630px;
+    overflow: scroll;
+    padding: 1rem;
+}
+
+.bot-message {
+    color: #000000; 
+    padding: 10px; 
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 70%;
+    align-self: flex-start; 
+}
+
+.aling{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+}
+.msg{
+    padding: 3px 14px;
+    border-radius: 5px; /* Rounded corners */
+
+    background-color: #96c0ee;
+
+}
+
+.user-message {
+    color: #000000; 
+    padding: 10px; /* Some padding around the text */
+    margin: 5px 0; /* Margin to space out messages */
+    max-width: 70%; /* Limit the width of the message */
+    align-self: flex-end; /* Align to the right */
+}
+
+@media screen and (max-width: 800px){
+    .chat-box{
+        width: 100%;
+        height: 100%;
+    }
+    .chat-body{
+        height: 80vh;
+    }   
+}
