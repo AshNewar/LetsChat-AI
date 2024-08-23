@@ -18,3 +18,8 @@ Postgres and HNSWLib InMemory Database ( VectorDB )
 ## WORKFLOW
 
 ![image](https://github.com/user-attachments/assets/e30c5a54-6d59-4e7f-9689-2fd28aa9b741)
+
+
+
+Chances of Error
+``` Note Check OpenAI credits limit ```
